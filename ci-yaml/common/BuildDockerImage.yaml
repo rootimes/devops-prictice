@@ -1,0 +1,7 @@
+BuildDockerImage:
+  tags:
+    - "k8s-runner"
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"
+      variables:
+        VERSION: "${MAJOR_VERSION}.${MINER_VERSION}.${BUILD_VERSION}"

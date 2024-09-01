@@ -1,0 +1,8 @@
+include:
+  - local: "Common/BuildDockerImage.yaml"
+
+variables:
+  REPO_NAME: gitlab-web
+
+stages:
+  - BuildImage
